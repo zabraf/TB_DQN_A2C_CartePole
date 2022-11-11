@@ -178,5 +178,3 @@ for seed in ARRAY_OF_SEED:
     total_stop_time = time.time()
     print("the episode took : ", (total_stop_time - total_start_time))
     run.finish()
-
-<
