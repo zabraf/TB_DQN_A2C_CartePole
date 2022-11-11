@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 
 env = gym.make("CartPole-v1")
-env = gym.wrappers.RecordVideo(env, 'video_AC_CartePole', episode_trigger = lambda x: x % 500 == 0)
+env = gym.wrappers.RecordVideo(env, 'video_A2C_CartePole', episode_trigger = lambda x: x % 500 == 0)
 state_dim = env.observation_space.shape[0]
 n_actions = env.action_space.n
 GAMMA = 0.99
