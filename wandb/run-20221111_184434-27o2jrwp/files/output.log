@@ -1,0 +1,8 @@
+
+  2%|█████                                                                                                                                                                                                                  | 118/5002 [00:02<01:28, 55.40it/s]
+Traceback (most recent call last):
+  File "c:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\PytorchA2C.py", line 151, in <module>
+    memory.clear()
+  File "c:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\PytorchA2C.py", line 60, in clear
+    self.log_probs.clear()
+KeyboardInterrupt

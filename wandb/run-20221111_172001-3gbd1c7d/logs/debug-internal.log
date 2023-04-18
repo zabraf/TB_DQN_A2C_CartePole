@@ -1,0 +1,9 @@
+2022-11-11 17:20:01,386 INFO    StreamThr :30608 [internal.py:wandb_internal():88] W&B internal server running at pid: 30608, started at: 2022-11-11 17:20:01.386247
+2022-11-11 17:20:01,388 DEBUG   HandlerThread:30608 [handler.py:handle_request():138] handle_request: status
+2022-11-11 17:20:01,390 DEBUG   SenderThread:30608 [sender.py:send_request():315] send_request: status
+2022-11-11 17:20:01,391 DEBUG   SenderThread:30608 [sender.py:send():301] send: header
+2022-11-11 17:20:01,391 INFO    WriterThread:30608 [datastore.py:open_for_write():75] open: C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_172001-3gbd1c7d\run-3gbd1c7d.wandb
+2022-11-11 17:20:01,426 DEBUG   SenderThread:30608 [sender.py:send():301] send: run
+2022-11-11 17:20:03,453 DEBUG   HandlerThread:30608 [handler.py:handle_request():138] handle_request: poll_exit
+2022-11-11 17:20:08,577 DEBUG   HandlerThread:30608 [handler.py:handle_request():138] handle_request: poll_exit
+2022-11-11 17:20:13,694 DEBUG   HandlerThread:30608 [handler.py:handle_request():138] handle_request: poll_exit

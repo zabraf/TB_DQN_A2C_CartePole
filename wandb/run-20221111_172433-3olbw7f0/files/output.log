@@ -1,0 +1,37 @@
+c:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\pytorchDQN.py:60: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  self.dones = np.zeros(MEM_SIZE, dtype=np.bool)
+  0%|                                                                                                                                                                                                                                 | 0/5002 [00:00<?, ?it/s]C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py:78: DeprecationWarning: [33mWARN: Recording ability for environment CartPole-v1 initialized with `render_mode=None` is marked as deprecated and will be removed in the future.
+  logger.deprecation(
+C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\core.py:51: DeprecationWarning: [33mWARN: The argument mode in render method is deprecated; use render_mode during environment initialization instead.
+[33mSee here for more information: https://www.gymlibrary.ml/content/api/
+  deprecation(
+
+
+  1%|█▊                                                                                                                                                                                                                      | 41/5002 [00:05<10:38,  7.77it/s]
+Traceback (most recent call last):
+  File "c:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\pytorchDQN.py", line 170, in <module>
+    state_, reward, done, info = env.step(action)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\record_video.py", line 176, in step
+    self.start_video_recorder()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\record_video.py", line 128, in start_video_recorder
+    self.video_recorder.capture_frame()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py", line 217, in capture_frame
+    self._encode_image_frame(frame)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py", line 276, in _encode_image_frame
+    self.encoder = ImageEncoder(
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py", line 427, in __init__
+    self.backend = imageio_ffmpeg.get_ffmpeg_exe()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\_utils.py", line 31, in get_ffmpeg_exe
+    if exe and os.path.isfile(exe) and _is_valid_exe(exe):
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\imageio_ffmpeg\_utils.py", line 87, in _is_valid_exe
+    subprocess.check_call(
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 364, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 347, in call
+    return p.wait(timeout=timeout)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1204, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1485, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+KeyboardInterrupt

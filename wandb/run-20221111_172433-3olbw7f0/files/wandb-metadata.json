@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.10.1",
+    "heartbeatAt": "2022-11-11T16:24:33.997520",
+    "startedAt": "2022-11-11T16:24:33.791393",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1080",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\Zabraf\\Documents\\Github\\TB_DQN_A2C_CartePole\\pytorchDQN.py",
+    "codePath": "pytorchDQN.py",
+    "git": {
+        "remote": "https://github.com/zabraf/TB_DQN_A2C_CartePole.git",
+        "commit": "3da2f0b66aad7f5d6eefa9506ba851d81f255f53"
+    },
+    "email": "lopesraphi@gmail.com",
+    "root": "C:/Users/Zabraf/Documents/Github/TB_DQN_A2C_CartePole",
+    "host": "DESKTOP-KIM9A30",
+    "username": "Zabraf",
+    "executable": "C:\\Users\\Zabraf\\AppData\\Local\\Programs\\Python\\Python310\\python.exe"
+}

@@ -1,0 +1,20 @@
+2022-11-11 17:17:10,570 INFO    MainThread:7228 [wandb_setup.py:_flush():68] Configure stats pid to 7228
+2022-11-11 17:17:10,570 INFO    MainThread:7228 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Zabraf\.config\wandb\settings
+2022-11-11 17:17:10,570 INFO    MainThread:7228 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\settings
+2022-11-11 17:17:10,570 INFO    MainThread:7228 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-11 17:17:10,570 INFO    MainThread:7228 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'pytorchDQN.py', 'program': 'c:\\Users\\Zabraf\\Documents\\Github\\TB_DQN_A2C_CartePole\\pytorchDQN.py'}
+2022-11-11 17:17:10,571 INFO    MainThread:7228 [wandb_init.py:_log_setup():476] Logging user logs to C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_171710-1il8hwsc\logs\debug.log
+2022-11-11 17:17:10,571 INFO    MainThread:7228 [wandb_init.py:_log_setup():477] Logging internal logs to C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_171710-1il8hwsc\logs\debug-internal.log
+2022-11-11 17:17:10,571 INFO    MainThread:7228 [wandb_init.py:init():516] calling init triggers
+2022-11-11 17:17:10,571 INFO    MainThread:7228 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-11 17:17:10,571 INFO    MainThread:7228 [wandb_init.py:init():569] starting backend
+2022-11-11 17:17:10,571 INFO    MainThread:7228 [wandb_init.py:init():573] setting up manager
+2022-11-11 17:17:10,576 INFO    MainThread:7228 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-11-11 17:17:10,582 INFO    MainThread:7228 [wandb_init.py:init():580] backend started and connected
+2022-11-11 17:17:10,583 INFO    MainThread:7228 [wandb_init.py:init():658] updated telemetry
+2022-11-11 17:17:10,714 INFO    MainThread:7228 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2022-11-11 17:17:13,785 WARNING MsgRouterThr:7228 [router.py:message_loop():77] message_loop has been closed
+2022-11-11 17:17:40,903 ERROR   MainThread:7228 [wandb_init.py:init():703] backend process timed out
+2022-11-11 17:17:40,903 ERROR   MainThread:7228 [wandb_init.py:init():712] encountered error: Error communicating with wandb process
+For more info see: https://docs.wandb.ai/library/init#init-start-error

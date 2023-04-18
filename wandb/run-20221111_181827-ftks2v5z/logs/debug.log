@@ -1,0 +1,91 @@
+2022-11-11 18:18:27,032 INFO    MainThread:31408 [wandb_setup.py:_flush():68] Configure stats pid to 31408
+2022-11-11 18:18:27,032 INFO    MainThread:31408 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Zabraf\.config\wandb\settings
+2022-11-11 18:18:27,032 INFO    MainThread:31408 [wandb_setup.py:_flush():68] Loading settings from C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\settings
+2022-11-11 18:18:27,032 INFO    MainThread:31408 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-11 18:18:27,032 INFO    MainThread:31408 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'PytorchA2C.py', 'program': 'c:\\Users\\Zabraf\\Documents\\Github\\TB_DQN_A2C_CartePole\\PytorchA2C.py'}
+2022-11-11 18:18:27,033 INFO    MainThread:31408 [wandb_init.py:_log_setup():476] Logging user logs to C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_181827-ftks2v5z\logs\debug.log
+2022-11-11 18:18:27,033 INFO    MainThread:31408 [wandb_init.py:_log_setup():477] Logging internal logs to C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_181827-ftks2v5z\logs\debug-internal.log
+2022-11-11 18:18:27,033 INFO    MainThread:31408 [wandb_init.py:init():516] calling init triggers
+2022-11-11 18:18:27,033 INFO    MainThread:31408 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-11-11 18:18:27,033 INFO    MainThread:31408 [wandb_init.py:init():569] starting backend
+2022-11-11 18:18:27,033 INFO    MainThread:31408 [wandb_init.py:init():573] setting up manager
+2022-11-11 18:18:27,036 INFO    MainThread:31408 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-11-11 18:18:27,040 INFO    MainThread:31408 [wandb_init.py:init():580] backend started and connected
+2022-11-11 18:18:27,041 INFO    MainThread:31408 [wandb_init.py:init():658] updated telemetry
+2022-11-11 18:18:27,087 INFO    MainThread:31408 [wandb_init.py:init():692] communicating run to backend with 30 second timeout
+2022-11-11 18:18:27,126 INFO    MainThread:31408 [wandb_run.py:_on_init():1974] communicating current version
+2022-11-11 18:18:27,250 INFO    MainThread:31408 [wandb_run.py:_on_init():1978] got version response upgrade_message: "wandb version 0.13.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-11-11 18:18:27,250 INFO    MainThread:31408 [wandb_init.py:init():727] starting run threads in backend
+2022-11-11 18:18:27,701 INFO    MainThread:31408 [wandb_run.py:_console_start():1954] atexit reg
+2022-11-11 18:18:27,701 INFO    MainThread:31408 [wandb_run.py:_redirect():1812] redirect: SettingsConsole.WRAP_RAW
+2022-11-11 18:18:27,702 INFO    MainThread:31408 [wandb_run.py:_redirect():1877] Wrapping output streams.
+2022-11-11 18:18:27,702 INFO    MainThread:31408 [wandb_run.py:_redirect():1899] Redirects installed.
+2022-11-11 18:18:27,702 INFO    MainThread:31408 [wandb_init.py:init():764] run started, returning control to user process
+2022-11-11 18:44:30,507 INFO    MainThread:31408 [wandb_run.py:_finish():1720] finishing run zabraf/CartPole-v1-AC/ftks2v5z
+2022-11-11 18:44:30,507 INFO    MainThread:31408 [wandb_run.py:_atexit_cleanup():1923] got exitcode: 0
+2022-11-11 18:44:30,507 INFO    MainThread:31408 [wandb_run.py:_restore():1906] restore
+2022-11-11 18:44:30,508 INFO    MainThread:31408 [wandb_run.py:_restore():1912] restore done
+2022-11-11 18:44:30,512 INFO    MainThread:31408 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 5196
+  total_bytes: 5196
+}
+
+2022-11-11 18:44:32,514 INFO    MainThread:31408 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 1
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 5196
+  total_bytes: 5196
+}
+
+2022-11-11 18:44:32,713 INFO    MainThread:31408 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 5196
+  total_bytes: 9896
+}
+
+2022-11-11 18:44:32,815 INFO    MainThread:31408 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 9896
+  total_bytes: 9896
+}
+
+2022-11-11 18:44:32,917 INFO    MainThread:31408 [wandb_run.py:_on_finish():2224] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 9896
+  total_bytes: 9896
+}
+
+2022-11-11 18:44:33,033 INFO    MainThread:31408 [wandb_run.py:_on_finish():2224] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 9896
+  total_bytes: 9896
+}
+local_info {
+}
+
+2022-11-11 18:44:34,138 INFO    MainThread:31408 [wandb_run.py:_footer_history_summary_info():3321] rendering history
+2022-11-11 18:44:34,139 INFO    MainThread:31408 [wandb_run.py:_footer_history_summary_info():3353] rendering summary
+2022-11-11 18:44:34,144 INFO    MainThread:31408 [wandb_run.py:_footer_sync_info():3277] logging synced files

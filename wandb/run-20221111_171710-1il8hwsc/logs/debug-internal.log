@@ -1,0 +1,95 @@
+2022-11-11 17:17:10,590 INFO    StreamThr :7044 [internal.py:wandb_internal():88] W&B internal server running at pid: 7044, started at: 2022-11-11 17:17:10.590402
+2022-11-11 17:17:10,592 DEBUG   HandlerThread:7044 [handler.py:handle_request():138] handle_request: status
+2022-11-11 17:17:10,594 DEBUG   SenderThread:7044 [sender.py:send_request():315] send_request: status
+2022-11-11 17:17:10,596 DEBUG   SenderThread:7044 [sender.py:send():301] send: header
+2022-11-11 17:17:10,596 INFO    WriterThread:7044 [datastore.py:open_for_write():75] open: C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_171710-1il8hwsc\run-1il8hwsc.wandb
+2022-11-11 17:17:10,715 DEBUG   SenderThread:7044 [sender.py:send():301] send: run
+2022-11-11 17:17:10,726 ERROR   SenderThread:7044 [internal_api.py:execute():202] 401 response executing GraphQL.
+2022-11-11 17:17:10,726 ERROR   SenderThread:7044 [internal_api.py:execute():203] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML><HEAD>
+<TITLE>401 Unauthorized</TITLE>
+</HEAD><BODY><H1>Unauthorized</H1>
+</BODY></HTML>
+
+2022-11-11 17:17:11,717 INFO    WriterThread:7044 [datastore.py:close():279] close: C:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\wandb\run-20221111_171710-1il8hwsc\run-1il8hwsc.wandb
+2022-11-11 17:17:11,717 INFO    HandlerThread:7044 [handler.py:finish():807] shutting down handler
+2022-11-11 17:17:11,717 ERROR   StreamThr :7044 [internal.py:wandb_internal():163] Thread SenderThread:
+Traceback (most recent call last):
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 199, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 39, in execute
+    request.raise_for_status()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: http://localhost:8080/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 417, in server_settings_introspection
+    res = self.gql(query)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\util.py", line 945, in no_retry_auth
+    raise CommError("Invalid or missing api_key. Run `wandb login`")
+wandb.errors.CommError: Invalid or missing api_key. Run `wandb login`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 1403, in upsert_run
+    self.server_settings_introspection()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 62, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 417, in server_settings_introspection
+    res = self.gql(query)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\util.py", line 945, in no_retry_auth
+    raise CommError("Invalid or missing api_key. Run `wandb login`")
+wandb.errors.CommError: Invalid or missing api_key. Run `wandb login`
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_util.py", line 50, in run
+    self._run()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_util.py", line 101, in _run
+    self._process(record)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal.py", line 308, in _process
+    self._sm.send(record)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\sender.py", line 303, in send
+    send_handler(record)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\sender.py", line 781, in send_run
+    self._init_run(run, config_value_dict)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\sender.py", line 807, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 62, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 1403, in upsert_run
+    self.server_settings_introspection()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 62, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\apis\normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 417, in server_settings_introspection
+    res = self.gql(query)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\util.py", line 945, in no_retry_auth
+    raise CommError("Invalid or missing api_key. Run `wandb login`")
+wandb.errors.CommError: Invalid or missing api_key. Run `wandb login`

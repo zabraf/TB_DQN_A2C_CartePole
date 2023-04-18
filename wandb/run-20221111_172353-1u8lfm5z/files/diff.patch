@@ -1,0 +1,27 @@
+diff --git a/PytorchA2C.py b/PytorchA2C.py
+index 7b70fc9..1f88b33 100644
+--- a/PytorchA2C.py
++++ b/PytorchA2C.py
+@@ -8,7 +8,7 @@ from tqdm import tqdm
+ 
+ 
+ env = gym.make("CartPole-v1")
+-env = gym.wrappers.RecordVideo(env, 'video_AC_CartePole', episode_trigger = lambda x: x % 500 == 0)
++env = gym.wrappers.RecordVideo(env, 'video_A2C_CartePole', episode_trigger = lambda x: x % 2 == 0)
+ state_dim = env.observation_space.shape[0]
+ n_actions = env.action_space.n
+ GAMMA = 0.99
+diff --git a/pytorchDQN.py b/pytorchDQN.py
+index 42b20a5..70c109a 100644
+--- a/pytorchDQN.py
++++ b/pytorchDQN.py
+@@ -177,6 +177,4 @@ for seed in ARRAY_OF_SEED:
+         wandb.log({"Reward": score})
+     total_stop_time = time.time()
+     print("the episode took : ", (total_stop_time - total_start_time))
+-    run.finish()
+-
+-<
+\ No newline at end of file
++    run.finish()
+\ No newline at end of file

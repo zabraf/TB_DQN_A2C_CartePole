@@ -1,0 +1,34 @@
+wandb: WARNING Calling wandb.run.save without any arguments is deprecated.Changes to attributes are automatically persisted.
+  0%|                                                                                                                                                                                                                                 | 0/5002 [00:00<?, ?it/s]C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py:78: DeprecationWarning: [33mWARN: Recording ability for environment CartPole-v1 initialized with `render_mode=None` is marked as deprecated and will be removed in the future.
+  logger.deprecation(
+C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\core.py:51: DeprecationWarning: [33mWARN: The argument mode in render method is deprecated; use render_mode during environment initialization instead.
+[33mSee here for more information: https://www.gymlibrary.ml/content/api/
+  deprecation(
+C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\container.py:139: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+
+
+
+
+
+
+
+
+
+  4%|█████████▍                                                                                                                                                                                                             | 220/5002 [00:21<07:56, 10.03it/s]
+Traceback (most recent call last):
+  File "c:\Users\Zabraf\Documents\Github\TB_DQN_A2C_CartePole\PytorchA2C.py", line 141, in <module>
+    next_state, reward, done, info = env.step(action.detach().data.numpy())
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\record_video.py", line 171, in step
+    self.close_video_recorder()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\record_video.py", line 188, in close_video_recorder
+    self.video_recorder.close()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py", line 226, in close
+    self.encoder.close()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\site-packages\gym\wrappers\monitoring\video_recorder.py", line 517, in close
+    ret = self.proc.wait()
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1204, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Users\Zabraf\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 1485, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+KeyboardInterrupt
